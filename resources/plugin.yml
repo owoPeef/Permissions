@@ -1,3 +1,7 @@
 name: owoPermissions
 main: ru.owopeef.owopermissions.Main
 version: 1.0
+commands:
+  perms:
+    description: Permission plugin.
+    usage: /<command>

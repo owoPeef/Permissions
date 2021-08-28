@@ -1,0 +1,9 @@
+groups:
+  admin:
+    permissions:
+      - murder_mystery.start
+      - murder_mystery.add_gold
+  default:
+    permissions:
+      - bukkit.command.gamemode.creative
+users:
