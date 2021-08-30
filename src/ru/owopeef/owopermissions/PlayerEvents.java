@@ -31,6 +31,10 @@ public class PlayerEvents implements Listener
                 attachment.setPermission(permissions.get(c), true);
                 c++;
             }
+            String prefix = Config.readConfigString("groups", group, "prefix");
+            String suffix = Config.readConfigString("groups", group, "suffix");
+            player.setDisplayName(prefix + player.getName() + suffix);
+            player.setPlayerListName(prefix + player.getName());
         }
         if (player_groups.size() >= 2) {
             int a = 0;
@@ -50,6 +54,9 @@ public class PlayerEvents implements Listener
                             attachment.setPermission(permissions.get(c), true);
                             c++;
                         }
+                        String prefix = Config.readConfigString("groups", currentGroup, "prefix");
+                        player.setDisplayName(prefix + player.getName());
+                        player.setPlayerListName(prefix + player.getName());
                     }
                     b++;
                 }

@@ -1,9 +1,12 @@
 groups:
   admin:
     permissions:
-      - murder_mystery.start
-      - murder_mystery.add_gold
+    - bukkit.command.gamemode.creative
+    prefix: "§c[ADMIN] "
+    suffix: "§f"
   default:
     permissions:
       - bukkit.command.gamemode.creative
+    prefix: "§7"
+    suffix: "§7"
 users:

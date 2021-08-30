@@ -50,6 +50,9 @@ public class Permissions
                     groups.add(group);
                     Config.appendConfig("users", uuid, groups);
                 }
+                String prefix = Config.readConfigString("groups", group, "prefix");
+                player.setDisplayName(prefix + player.getName());
+                player.setPlayerListName(prefix + player.getName());
             }
             a++;
         }
